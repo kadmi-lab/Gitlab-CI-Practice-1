@@ -1,3 +1,4 @@
+image: python
 
 stages:          # List of stages for jobs, and their order of execution
   - build
@@ -33,4 +34,5 @@ deploy-job:      # This job runs in the deploy stage.
   environment: production
   script:
     - echo "Deploying application..."
+    - python3 --version
     - echo "Application successfully deployed."
