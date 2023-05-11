@@ -1,5 +1,8 @@
 image: python
 
+variables:
+  USERNAME: kadmi_lab
+
 stages:          # List of stages for jobs, and their order of execution
   - build
   - test
@@ -35,4 +38,5 @@ deploy-job:      # This job runs in the deploy stage.
   script:
     - echo "Deploying application..."
     - python3 --version
+    - echo "Using credentials - $USERNAME", $PASSWORD"
     - echo "Application successfully deployed."
