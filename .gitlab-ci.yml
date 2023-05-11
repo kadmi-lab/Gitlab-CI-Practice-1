@@ -38,5 +38,5 @@ deploy-job:      # This job runs in the deploy stage.
   script:
     - echo "Deploying application..."
     - python3 --version
-    - echo "Using credentials - $USERNAME", $PASSWORD"
+    - echo "Using credentials - $USERNAME, $PASSWORD"
     - echo "Application successfully deployed."
